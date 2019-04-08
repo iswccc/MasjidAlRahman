@@ -1,7 +1,7 @@
 # Masjid Al-Rahman
 Masjid Al-Rahman (ISWCCC) Website
 
-Site View:
+Site View
 Header (Announcments)
 Daily Schedule
 Donation (coming soon)
