@@ -1,6 +1,28 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+
+      // https://google,developers.appspot.com/chart/interactive/docs/spreadsheets#gid
+      google.load('visualization', '1', {packages: ['corechart', 'line']});
+      google.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        // Add your sheets url and range below
+        var spreadsheetUrl = "https://docs.google.com/spreadsheets/d/e/2PACX-1vSnz85GgRrNKtta5DpHY5j-NOOs-foI6oEtcAuVs7PlVmmZf_aod6polRcGg3UU4-QcoHrikOCN2A2k/pubhtml?gid=2071841746&single=true&range=C14";
+        var query = new google.visualization.Query(spreadsheetUrl);
+        query.send(handleQueryResponse);
+      }
+
+      function handleQueryResponse(response) {
+        var dataTable = response.getDataTable();
+        // https://developers.google.com/chart/interactive/docs/reference?hl=en#methods
+        // getValue(rowIndex, columnIndex)
+        document.getElementById("test").innerHTML = dataTable.getValue(0, 0);
+      }
+    </script>
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138490950-1"></script>
 <script>
@@ -150,7 +172,8 @@ else /* else use Google */
 
                 <div><p align="center">
                 <script type="text/javascript" id="masjidnow-daily-8489"> var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://www.masjidnow.com/embeds/daily_widget?masjid_id=8489&options[show_adhan]=true&options[show_monthly_info]=false'; var embedder = document.getElementById('masjidnow-daily-8489'); embedder.parentNode.insertBefore(s, embedder); </script>
-                <p>
+  <div align="center"><p>Jummah <br>English:<time datetime="08:00" id="test"> | Khutbah: </p> </div>
+
                              <div class="chips chips-small"><p align="center">
 <a href="#" data-menu="question-1" data-menu-type="menu-box-modal" class="color-black"><i class="chips-icon fa fa-info bg-red-dark"></i>Inacurate Timings?</a></p>
 </div>
@@ -374,9 +397,9 @@ else /* else use Google */
             <a href="tel:(510) 599 9348" class="phone-box">
                 <i class="shadow-icon-large fa fa-user bg-green-dark"></i>
                 <em>Masjid IT</em>
-                <strong>(510) 599 9348</strong>
+                <strong>COMING SOON</strong>
             </a>
-            <a href="tel:(510) 236 8130" class="phone-box">
+            <a href="tel:" class="phone-box">
                 <i class="shadow-icon-large fa fa-life-ring font-24 bg-orange-dark"></i>
                 <em>General</em>
                 <strong>(510) 236 8130</strong>
