@@ -5,8 +5,8 @@ require_once "initialDeposit.php";
 require_once "finalDeposit.php";
 
 	$stripeDetails = array(
-		"secretKey" => "sk_test_hmLGIzbJsP5zG4pWEjn1ZEHr",
-		"publishableKey" => "pk_test_5Rh7cEk25rz8zP6rz475lE28"
+		"secretKey" => "pk_test_Fywng1DvZnhmZtPltht2kt1T",
+		"publishableKey" => "sk_test_x1g744jazyIYQXzHCvGP8ww1"
 	);
 
 	// Set your secret key: remember to change this to your live secret key in production

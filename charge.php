@@ -2,6 +2,7 @@
   require_once('./config.php');
 
   $token  = $_POST['stripeToken'];
+  $email = $_POST["stripeEmail"];
 
   $customer = \Stripe\Customer::create(array(
       'email' => ($_POST['stripeEmail']),
