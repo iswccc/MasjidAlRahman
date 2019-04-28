@@ -6,7 +6,7 @@ $(window).on('load',function(){
                   sessionStorage.setItem( 'doNotShow', true );
                   Preloader();
               } else {
-                 $ ('.loader, .preloader').hide();
+                 $ ('.load, .preloader').hide();
               }
 });
 
