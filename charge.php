@@ -1,7 +1,5 @@
 <?php
 
-require_once "config.php";
-
 var handler = StripeCheckout.configure({
   key: 'pk_test_Fywng1DvZnhmZtPltht2kt1T',
   image: 'https://stripe.com/img/documentation/checkout/marketplace.png',
