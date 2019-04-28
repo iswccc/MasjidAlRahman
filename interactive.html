@@ -450,11 +450,26 @@
     <div id="menu-share-list-large" data-menu-height="400" class="menu menu-box-bottom bg-white">
         <div class="left-25 right-25">
             <ul class="link-list link-list-large">
-                <li><a href="#" class="shareToFacebook"><i class="fa fa-angle-right"></i><i class="fab fa-facebook font-30 facebook-color"></i><span>Facebook</span><em>Share our page to Facebook</em></a>
-                <li><a href="#" class="shareToTwitter"><i class="fa fa-angle-right"></i><i class="fab fa-twitter-square font-30 twitter-color"></i><span>Twitter</span><em>Share our page to Twitter</em></a>
-                <li><a href="#" class="shareToGooglePlus"><i class="fa fa-angle-right"></i><i class="fab fa-google-plus-square font-30 google-color"></i><span>Google Plus</span><em>Share our page to Google Plus</em></a>
-                <li><a href="#" class="shareToWhatsApp"><i class="fa fa-angle-right"></i><i class="fab fa-whatsapp-square font-30 whatsapp-color"></i><span>WhatsApp</span><em>Share our page via WhatsApp</em></a>
-                <li><a href="#" class="shareToMail no-border"><i class="fa fa-angle-right"></i><i class="fa fa-envelope-square font-30 mail-color"></i><span>E-Mail</span><em>Share our page via Email</em></a>
+                <li>
+            <input style="margin-top:50px; margin-left:75px;" type="image" name="submit" border="0" src="images/paypal-logo.png" alt="PayPal - The safer, easier way to pay online">
+                <li>
+                
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+  <a href="https://masjidalrahman.com">
+    <input type="hidden" name="business" value="info@masjidalrahman.com">
+    <input type="hidden" name="bn" value="mbjtechnolabs_SP">
+    <input type="hidden" name="cmd" value="_donations">
+            <input style="margin-top:30px; margin-left:75px;" type="image" name="submit" border="0" src="images/paypal.png" alt="PayPal - The safer, easier way to pay online">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="notify_url" value="https://masjidalrahman.com/?Donation_Button&amp;action=ipn_handler">
+    <input type="hidden" name="return" value="https://masjidalrahman.com/donation-confirmation/"></a>
+</form>
+
+
+
+                <li><h4 class="center-text top-20 bottom-2e">Press the donate button  above to make an onetime or monthly donation with your credit or debit card via PayPal.
+</h4>
+                
             </ul>
         </div>
     </div>

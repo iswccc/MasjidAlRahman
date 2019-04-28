@@ -92,7 +92,9 @@
             </div>
             <div class="menu-list icon-background-active">
                 <em class="menu-divider top-10">Navigation</em>
-                <a class="menu-item active-menu" href="index.html"><i class="fa gradient-green-light fa-home"></i>MasjidHub</a>
+                <a class="menu-item active-menu" href="index.html"><i class="fa gradient-brown-light fa-home"></i>MasjidHub</a>
+                <a class="menu-item "href="#" data-menu="menu-share-list-large" data-menu-type="menu-box-bottom"><i class="fa gradient-green-dark fas fa-donate"></i>Donate</a>
+
                 <a class="menu-item close-menu" href="#"><i class="fa gradient-red-dark fa-times"></i>Close Menu</a>
                 <em class="menu-divider">Get in Touch</em>
                 <a class="menu-item" href="#" data-menu-type="menu-box-bottom" data-menu="menu-phone"><i class="fa gradient-green-light fa-phone"></i>Call Us</a>
@@ -199,6 +201,18 @@ else /* else use Google */
             </div>
         </div>
 
+             <div class="content-box bg-white shadow-large">
+            <div id="page-maintenance">
+                <h1 class="center-text top-30 bottom-30"><i class="fas fa-donate fa-4x color-green-dark"></i></h1>
+                <h1 class="center-text bottom-0 fa-2x">Donate to Masjid Al-Rahman</h1>
+                <h6 class="center-text regularbold bottom-20 color-highlight">One-time or monthly</h6>
+                <p class="center-text">
+                    “Whosoever builds for Allah a masjid, Allah will reward him similar to it in paradise.” (Bukhari)
+                </p>
+                <a href="#" data-menu="menu-share-list-large" data-menu-type="menu-box-bottom" class="bg-green-dark shadow-icon-large bottom-30 button button-s button-round button-center uppercase ultrabold">DONATE</a>
+            </div>
+        </div>
+
         <div class="content-box shadow-large bg-white">
             <div class="top-25 bottom-35">
                 <h3 class="bottom-10">Masjid Programs<i class="fa fa-calendar-alt float-right top-0 color-blue-light"></i></h3>
@@ -278,7 +292,7 @@ else /* else use Google */
 			<div class="footer-socials">
 				<a href="https://www.facebook.com/MasjidAlRahmanISWCCC"><i class="icon-shadow facebook-bg fab fa-facebook-f font-16"></i></a>
 				<a href="https://twitter.com/MasjidAlRahman"><i class="icon-shadow twitter-bg fab fa-twitter font-16"></i></a>
-				<a href="index.html"><i class="icon-shadow google-bg fas fa-home font-16"></i></a>
+				<a href="#" data-menu="menu-share-list-large" data-menu-type="menu-box-bottom"><i class="icon-shadow google-bg fas fa-donate font-16"></i></a>
 				<a href="#" data-menu-type="menu-box-bottom" data-menu="menu-share"><i class="icon-shadow instagram-bg fas fa-share-alt font-14"></i></a>
 				<a href="#" data-menu-type="menu-box-bottom" data-menu="menu-phone"><i class="icon-shadow bg-green-dark fas fa-phone font-16"></i></a>
 			</div>
@@ -286,6 +300,34 @@ else /* else use Google */
 			<p class="footer-copyright">&copy; Masjid Al-Rahman <span class="copyright-year"></span>. All rights reserved.</p>
 		</div>
 	</div>
+
+  <!--Share Lists-->
+    <div id="menu-share-list-large" data-menu-height="400" class="menu menu-box-bottom bg-white">
+        <div class="left-25 right-25">
+            <ul class="link-list link-list-large">
+                <li>
+            <input style="margin-top:50px; margin-left:75px;" type="image" name="submit" border="0" src="images/paypal-logo.png" alt="PayPal - The safer, easier way to pay online">
+                <li>
+
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+  <a href="https://masjidalrahman.com">
+    <input type="hidden" name="business" value="info@masjidalrahman.com">
+    <input type="hidden" name="bn" value="mbjtechnolabs_SP">
+    <input type="hidden" name="cmd" value="_donations">
+            <input style="margin-top:30px; margin-left:75px;" type="image" name="submit" border="0" src="images/paypal.png" alt="PayPal - The safer, easier way to pay online">
+    <input type="hidden" name="currency_code" value="USD">
+    <input type="hidden" name="notify_url" value="https://masjidalrahman.com/?Donation_Button&amp;action=ipn_handler">
+    <input type="hidden" name="return" value="https://masjidalrahman.com/donation-confirmation/"></a>
+</form>
+
+
+
+                <li><h5 class="center-text top-20 bottom-2e">Press the donate button  above to make an one-time or monthly donation with your credit or debit card via PayPal.
+</h5>
+
+            </ul>
+        </div>
+    </div>
 
     <!-- Menu Quesiton -->
     <div class="menu menu-box-modal gradient-sky-dark shadow-large" id="question-1" data-menu-height="315">
