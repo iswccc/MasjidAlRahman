@@ -1,6 +1,13 @@
 $(window).on('load',function(){
 	setTimeout(function(){$('#page-build').css('display','block');},25)
 	setTimeout(function(){$("#preloader").addClass('hide-preloader');},450);// will fade out the white DIV that covers the website.
+
+      if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
+                  sessionStorage.setItem( 'doNotShow', true );
+                  Preloader();
+              } else {
+                 $ ('.loader, .preloader').hide();
+              }
 });
 
 $(document).ready(function(){

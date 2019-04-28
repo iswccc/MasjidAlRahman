@@ -93,24 +93,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<em>This will only take a second. It's totally worth it!</em>
 </div>
 
-<script type="text/javascript">
-$(document).ready(function() {
-    $(window).load(function() {
-        function Preloader() {
-            var preloader = $ ('.loader');
-            preloader.delay(1000) .fadeOut (500);
-            var preloader = $('.preloader');
-            preloader.delay (1500) .slideUp(500);
-        }
-        if ( ! sessionStorage.getItem( 'doNotShow' ) ) {
-            sessionStorage.setItem( 'doNotShow', true );
-            Preloader();
-        } else {
-           $ ('.loader, .preloader').hide();
-        }
-    });
-});
-</script>
 
 <div id="page-transitions" class="page-build">
     <div class="page-bg gradient-body-1"></div>
