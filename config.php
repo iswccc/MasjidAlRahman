@@ -1,8 +1,5 @@
 <?php
 	require_once "stripe-php-master/init.php";
-	require_once "seatConfirmationDeposit.php";
-require_once "initialDeposit.php";
-require_once "finalDeposit.php";
 
 	$stripeDetails = array(
 		"secretKey" => "pk_test_Fywng1DvZnhmZtPltht2kt1T",
