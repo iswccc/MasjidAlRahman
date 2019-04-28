@@ -1,5 +1,6 @@
 <?php
   require_once('config.php');
+  \Stripe\Stripe::setVerifySslCerts(false);
 
   $token  = $_POST['stripeToken'];
 
