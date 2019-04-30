@@ -812,7 +812,7 @@ ol ol ol{list-style-type:disc;}
 .regular{font-weight:400!important;}
 .regularbold{font-weight:500!important;}
 .bolder{font-weight:700!important;}
-.ultrabold{font-weight:900!important;}
+.ultrabold{font-weight:900!important; line-height: 1.2em;}
 .justify{text-align:justify!important;}
 .italic{font-style: italic;}
 .pointer{cursor:pointer;}
